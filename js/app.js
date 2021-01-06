@@ -1,5 +1,5 @@
 //slider
-// if(document.querySelector('.slider_sec')){
+if(document.querySelector('.swiper-container')){
   
   var swiper = new Swiper('.swiper-container', {
     slidesPerView: 1,
@@ -39,7 +39,7 @@
     },
   });
 
-// }
+}
 
 //rate General
 if(document.querySelector('.rate_block')){
