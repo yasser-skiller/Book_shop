@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1">
+    <title>site title </title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d24b72e522.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+      <div class="row">
+          <div class="dh_overlay_black"></div>
+          <div class="dh_icon_side_menu"><i class="fas fa-bars"></i></div>
+
+          <div class="col-12 col-lg-9 pr-0">
+                <nav class="py-3 d-flex flex-column-reverse flex-md-row align-items-center justify-content-between px-4">
+                    <div class="d-flex justify-content-around align-items-center part_two">
+                        <span><i class="fas fa-sign-out-alt mr-2"></i></span>         
+                        <div class="d-flex mx-3 align-items-center">
+                            <div class="d-flex flex-column text-right">
+                                <small>محمد مصطفي</small>
+                                <small>مدير عام</small>
+                            </div>
+                            <img src="img/Ellipse 2.png"  class="img_profile ml-2">
+                        </div>
+                        <div class="d-flex">
+                            <span><i class="fas fa-envelope mx-2"></i></span>
+                            <span><i class="fas fas fa-bell mx-2"></i></span>
+                        </div>
+                    </div>
+                    <form action="#" class="position-relative form">
+                        <input class="form-control rounded-pill pr-4 rlt" placeholder="بحث">
+                        <span class="position-absolute" style="top: 7px;right: 7px;"><i class="fas fa-search gray"></i></span>
+                    </form>
+                </nav>
+              <!-- body -->
+              <div id="dash_bord_body_dash">
+                <section class="bg_blue_wh p-4">
+                    <h5 class="text-right"><b>اضافه كتاب جديد</b></h5>
+                    <form action="#" class="rlt text-center">
+                        <div class="position-relative mt-4 upload_book_img_size mx-auto">
+                            <span class="position-absolute del_img_upload del_img_upload_show"><i class="fas fa-times text-danger"></i></span>
+                            <label for="upload_book_img" class="upload_book_img_size">
+                                <img class="upload_book_img_field upload_book_img_size" src="img/upload.svg">
+                            </label>
+                            <input type="file" id="upload_book_img" hidden>
+                        </div>
+                        <input class="form-control mt-3" type="text" placeholder="اسم الكتاب">
+                        <input class="form-control mt-3" type="text" placeholder=" المؤلف">
+                        <input class="form-control mt-3" type="number" placeholder=" سعر الكتاب">
+                        <input class="form-control mt-3" type="text" placeholder=" اللغه">
+                        <input class="form-control mt-3" type="number" placeholder="عدد صفحات الكتاب">
+                        <p class="text-right my-3">نوع الكتاب</p>
+                        <div class="d-flex flex-wrap">
+                            <div class="d-flex m-2 form-check">
+                                <input type="checkbox" class="form-check-input" id="atrs">
+                                <label class="form-check-label mr-3" for="atrs">فن و تصوير</label>
+                            </div>
+                            <div class="d-flex m-2 form-check">
+                                <input type="checkbox" class="form-check-input" id="programming">
+                                <label class="form-check-label mr-3" for="programming">برمجه</label>
+                            </div>
+                            <div class="d-flex m-2 form-check">
+                                <input type="checkbox" class="form-check-input" id="history">
+                                <label class="form-check-label mr-3" for="history">تاريخ</label>
+                            </div>
+                            <div class="d-flex m-2 form-check">
+                                <input type="checkbox" class="form-check-input" id="religious">
+                                <label class="form-check-label mr-3" for="religious">ديني</label>
+                            </div>
+                            <div class="d-flex m-2 form-check">
+                                <input type="checkbox" class="form-check-input" id="childbooks">
+                                <label class="form-check-label mr-3" for="childbooks">كتب اطفال</label>
+                            </div>
+                            <div class="d-flex m-2 form-check">
+                                <input type="checkbox" class="form-check-input" id="humandevelopement">
+                                <label class="form-check-label mr-3" for="humandevelopement">تنميه بشرية</label>
+                            </div>
+                            <div class="d-flex m-2 form-check">
+                                <input type="checkbox" class="form-check-input" id="romantic">
+                                <label class="form-check-label mr-3" for="romantic">رومانسي</label>
+                            </div>
+                            
+                        </div>
+                        <p class="text-right my-3"> تنسيق الكتاب</p>
+                        <div class="d-flex flex-wrap">
+                            <div class="d-flex m-2 form-check">
+                                <input type="checkbox" class="form-check-input" id="heavy">
+                                <label class="form-check-label mr-3" for="heavy">غلاف ثقيل</label>
+                            </div>
+                            <div class="d-flex m-2 form-check">
+                                <input type="checkbox" class="form-check-input" id="normal">
+                                <label class="form-check-label mr-3" for="normal">غلاف عادي</label>
+                            </div>
+                            <div class="d-flex m-2 form-check">
+                                <input type="checkbox" class="form-check-input" id="electronic">
+                                <label class="form-check-label mr-3" for="electronic">كتاب إليكتروني</label>
+                            </div>
+                            <div class="d-flex m-2 form-check">
+                                <input type="checkbox" class="form-check-input" id="pepear">
+                                <label class="form-check-label mr-3" for="pepear">كتاب ورقي</label>
+                            </div>
+                        </div>
+                        <textarea class="form-control mt-3" placeholder="  تفاصيل الكتاب" rows="8"></textarea>
+                        <button class="btn btn-success px-5 mt-5">اضف الان</button>
+                    </form>
+                </section>
+              </div>
+             
+          </div>
+
+          <div class="col-lg-3 p-3 border border-2 parent_side_menu bg-white">
+            <a href="./index.html" class="d-flex flex-column align-items-center">
+                <span><i class="fas fa-book-open fa-3x blue_sec"></i></span>
+                <h3 class="blue_sec my-2"><b>مكتبتي</b></h3>
+            </a>
+            <div class="text-center mt-5 side_menu">
+                <a href="#" class="d-flex justify-content-end w-75 mx-auto gray mt-4 ">
+                    <span>البيانات الرئسية</span>
+                    <span><i class="fas fa-home ml-2"></i></span>
+                </a>
+                <a href="./Dh_user.html" class="d-flex justify-content-end w-75 mx-auto gray mt-4">
+                    <span> المستخدمين</span>
+                    <span><i class="fas fa-user-friends ml-2"></i></span>
+                </a>
+                <a href="./Dh_products.html" class="d-flex justify-content-end w-75 mx-auto gray mt-4 active_dsch_item">
+                    <span> المنتجات</span>
+                    <span><i class="fas fa-book ml-2"></i></span>
+                </a>
+                <a href="#" class="d-flex justify-content-end w-75 mx-auto gray mt-4">
+                    <span>الرسائل </span>
+                    <span><i class="far fa-comments ml-2"></i></span>
+                </a>
+                <a href="#" class="d-flex justify-content-end w-75 mx-auto gray mt-4">
+                    <span>المبيعات </span>
+                    <span><i class="far fa-address-card ml-2"></i></span>
+                </a>
+            </div>
+          </div>
+
+        </div>
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/dash.js"></script>
+  </body>
+
+</html>

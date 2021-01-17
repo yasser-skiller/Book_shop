@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1">
+    <title>site title </title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css">
+    <script src="https://kit.fontawesome.com/d24b72e522.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+      <div class="row">
+          <div class="dh_overlay_black"></div>
+          <div class="dh_icon_side_menu"><i class="fas fa-bars"></i></div>
+
+          <div class="col-12 col-lg-9 pr-0">
+
+              <nav class="py-3 d-flex flex-column-reverse flex-md-row align-items-center justify-content-between px-4">
+                  <div class="d-flex justify-content-around align-items-center part_two">
+                      <span><i class="fas fa-sign-out-alt mr-2"></i></span>         
+                      <div class="d-flex mx-3 align-items-center">
+                        <div class="d-flex flex-column text-right">
+                            <small>محمد مصطفي</small>
+                            <small>مدير عام</small>
+                        </div>
+                        <img src="img/Ellipse 2.png"  class="img_profile ml-2">
+                    </div>
+                      <div class="d-flex">
+                        <span><i class="fas fa-envelope mx-2"></i></span>
+                        <span><i class="fas fas fa-bell mx-2"></i></span>
+                      </div>
+                  </div>
+                  <form action="#" class="position-relative form">
+                      <input class="form-control rounded-pill pr-4 rlt" placeholder="بحث">
+                      <span class="position-absolute" style="top: 7px;right: 7px;"><i class="fas fa-search gray"></i></span>
+                  </form>
+              </nav>
+              <!-- body -->
+              <div id="dash_bord_body_dash ">
+                <section class="bg_blue_wh p-4 rlt ">
+                    <div class="container bg-white rounded rounded-3 shadow py-4 scroll_case">
+
+                        <div  class="d-flex rlt flex-wrap justify-content-between mb-3">
+                            <h5 class="text-right"><b>بيانات الدفع</b></h5>
+                            <div class="d-flex rounded rounded-3 px-2 bg_blue_dark text-white py-0">
+                                <small class="ml-4 my-1">كل المبلغ</small>
+                                <small class="my-1">120 الف</small>
+                            </div>
+                        </div>
+  
+                      <div style="min-width: 767px;" class="">
+                          <table class="table text-center" id="myTable">
+                              <thead>
+                                <tr>
+                                    <th><small>المستخدم</small></th>
+                                    <th><small>الحالة</small></th>
+                                    <th> <small>المبلغ</small></th>
+                                    <th><small>التاريخ</small></th>
+                                    <th><small> دفع عن طريق</small></th>
+                                    <th></th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                    <tr > 
+                                        <td >
+                                            <div class="d-flex justify-content-center align-items-center gray">
+                                                <img src="img/Ellipse 2.png"  class="img_user ml-2">
+                                                <small>محمد </small>
+                                            </div>
+                                        </td>
+                                        <td class="gray">
+                                            <div class="d-flex align-items-center">
+                                            <span class="bg-danger ml-2 line_case"></span>
+                                                <span>ملغي</span>
+                                            </div>
+                                        </td>
+                                        <td class="gray"><small>287842$</small></td>
+                                        <td class="gray"><small>يوم 26 ابريل 2020</small></td>
+                                        <td class="gray"><small>ماستركارد</small></td>
+                                        <td><a class="btn btn-primary_two"><small>تفاصيل</small></a></td>
+                                    </tr>
+                                    <tr > 
+                                    <td >
+                                        <div class="d-flex justify-content-center align-items-center gray">
+                                            <img src="img/Ellipse 2.png"  class="img_user ml-2">
+                                            <small>علي ياسر</small>
+                                        </div>
+                                    </td>
+                                    <td class="gray">
+                                        <div class="d-flex align-items-center">
+                                            <span class="bg-success ml-2 line_case"></span>
+                                            <span>ناجح</span>
+                                            </div>
+                                    </td>
+                                    <td class="gray"><small>242$</small></td>
+                                    <td class="gray"><small>يوم 26 ابريل 2020</small></td>
+                                    <td class="gray"><small>ماستركارد</small></td>
+                                    <td><a class="btn btn-primary_two"><small>تفاصيل</small></a></td>
+                                    </tr>
+                                    <tr > 
+                                    <td >
+                                        <div class="d-flex justify-content-center align-items-center gray">
+                                            <img src="img/Ellipse 2.png"  class="img_user ml-2">
+                                            <small>علي ياسر</small>
+                                        </div>
+                                    </td>
+                                    <td class="gray">
+                                        <div class="d-flex align-items-center">
+                                            <span class="bg-warning ml-2 line_case"></span>
+                                            <span>انتظار</span>
+                                            </div>
+                                    </td>
+                                    <td class="gray"><small>242$</small></td>
+                                    <td class="gray"><small>يوم 26 ابريل 2020</small></td>
+                                    <td class="gray"><small>ماستركارد</small></td>
+                                    <td><a class="btn btn-primary_two"><small>تفاصيل</small></a></td>
+                                    </tr>
+                                    <tr > 
+                                        <td >
+                                            <div class="d-flex justify-content-center align-items-center gray">
+                                                <img src="img/Ellipse 2.png"  class="img_user ml-2">
+                                                <small>علي ياسر</small>
+                                            </div>
+                                        </td>
+                                        <td class="gray">
+                                            <div class="d-flex align-items-center">
+                                            <span class="bg-danger ml-2 line_case"></span>
+                                                <span>ملغي</span>
+                                            </div>
+                                        </td>
+                                        <td class="gray"><small>24762$</small></td>
+                                        <td class="gray"><small>يوم 26 ابريل 2020</small></td>
+                                        <td class="gray"><small>ماستركارد</small></td>
+                                        <td><a class="btn btn-primary_two"><small>تفاصيل</small></a></td>
+                                    </tr>
+                                    <tr > 
+                                    <td >
+                                        <div class="d-flex justify-content-center align-items-center gray">
+                                            <img src="img/Ellipse 2.png"  class="img_user ml-2">
+                                            <small>علي ياسر</small>
+                                        </div>
+                                    </td>
+                                    <td class="gray">
+                                        <div class="d-flex align-items-center">
+                                            <span class="bg-success ml-2 line_case"></span>
+                                            <span>ناجح</span>
+                                            </div>
+                                    </td>
+                                    <td class="gray"><small>24562$</small></td>
+                                    <td class="gray"><small>يوم 26 ابريل 2020</small></td>
+                                    <td class="gray"><small>ماستركارد</small></td>
+                                    <td><a class="btn btn-primary_two"><small>تفاصيل</small></a></td>
+                                    </tr>
+                                    <tr > 
+                                    <td >
+                                        <div class="d-flex justify-content-center align-items-center gray">
+                                            <img src="img/Ellipse 2.png"  class="img_user ml-2">
+                                            <small>علي ياسر</small>
+                                        </div>
+                                    </td>
+                                    <td class="gray">
+                                        <div class="d-flex align-items-center">
+                                            <span class="bg-warning ml-2 line_case"></span>
+                                            <span>انتظار</span>
+                                            </div>
+                                    </td>
+                                    <td class="gray"><small>224242$</small></td>
+                                    <td class="gray"><small>يوم 26 ابريل 2020</small></td>
+                                    <td class="gray"><small>ماستركارد</small></td>
+                                    <td><a class="btn btn-primary_two"><small>تفاصيل</small></a></td>
+                                    </tr>
+                                    <tr > 
+                                        <td >
+                                            <div class="d-flex justify-content-center align-items-center gray">
+                                                <img src="img/Ellipse 2.png"  class="img_user ml-2">
+                                                <small>علي ياسر</small>
+                                            </div>
+                                        </td>
+                                        <td class="gray">
+                                            <div class="d-flex align-items-center">
+                                            <span class="bg-danger ml-2 line_case"></span>
+                                                <span>ملغي</span>
+                                            </div>
+                                        </td>
+                                        <td class="gray"><small>224342$</small></td>
+                                        <td class="gray"><small>يوم 26 ابريل 2020</small></td>
+                                        <td class="gray"><small>ماستركارد</small></td>
+                                        <td><a class="btn btn-primary_two"><small>تفاصيل</small></a></td>
+                                    </tr>
+                                    <tr > 
+                                    <td >
+                                        <div class="d-flex justify-content-center align-items-center gray">
+                                            <img src="img/Ellipse 2.png"  class="img_user ml-2">
+                                            <small>علي ياسر</small>
+                                        </div>
+                                    </td>
+                                    <td class="gray">
+                                        <div class="d-flex align-items-center">
+                                            <span class="bg-success ml-2 line_case"></span>
+                                            <span>ناجح</span>
+                                            </div>
+                                    </td>
+                                    <td class="gray"><small>242422$</small></td>
+                                    <td class="gray"><small>يوم 26 ابريل 2050</small></td>
+                                    <td class="gray"><small>ماستركارد</small></td>
+                                    <td><a class="btn btn-primary_two"><small>تفاصيل</small></a></td>
+                                    </tr>
+                                    <tr > 
+                                    <td >
+                                        <div class="d-flex justify-content-center align-items-center gray">
+                                            <img src="img/Ellipse 2.png"  class="img_user ml-2">
+                                            <small>علي ياسر</small>
+                                        </div>
+                                    </td>
+                                    <td class="gray">
+                                        <div class="d-flex align-items-center">
+                                            <span class="bg-warning ml-2 line_case"></span>
+                                            <span>انتظار</span>
+                                            </div>
+                                    </td>
+                                    <td class="gray"><small>24532$</small></td>
+                                    <td class="gray"><small>يوم 26 ابريل 2023</small></td>
+                                    <td class="gray"><small>ماستركارد</small></td>
+                                    <td><a class="btn btn-primary_two"><small>تفاصيل</small></a></td>
+                                    </tr>
+                                    <tr > 
+                                        <td >
+                                            <div class="d-flex justify-content-center align-items-center gray">
+                                                <img src="img/Ellipse 2.png"  class="img_user ml-2">
+                                                <small>علي ياسر</small>
+                                            </div>
+                                        </td>
+                                        <td class="gray">
+                                            <div class="d-flex align-items-center">
+                                            <span class="bg-warning ml-2 line_case"></span>
+                                                <span>انتظار</span>
+                                            </div>
+                                        </td>
+                                        <td class="gray"><small>242$</small></td>
+                                        <td class="gray"><small>يوم 26 ابريل 2020</small></td>
+                                        <td class="gray"><small>ماستركارد</small></td>
+                                        <td><a class="btn btn-primary_two"><small>تفاصيل</small></a></td>
+                                    </tr>
+                                    <tr > 
+                                        <td >
+                                            <div class="d-flex justify-content-center align-items-center gray">
+                                                <img src="img/Ellipse 2.png"  class="img_user ml-2">
+                                                <small>علي ياسر</small>
+                                            </div>
+                                        </td>
+                                        <td class="gray">
+                                            <div class="d-flex align-items-center">
+                                                <span class="bg-danger ml-2 line_case"></span>
+                                                <span>ملغي</span>
+                                                </div>
+                                        </td>
+                                        <td class="gray"><small>24762$</small></td>
+                                        <td class="gray"><small>يوم 26 ابريل 2020</small></td>
+                                        <td class="gray"><small>ماستركارد</small></td>
+                                        <td><a class="btn btn-primary_two"><small>تفاصيل</small></a></td>
+                                    </tr>
+                                    <tr > 
+                                        <td >
+                                            <div class="d-flex justify-content-center align-items-center gray">
+                                                <img src="img/Ellipse 2.png"  class="img_user ml-2">
+                                                <small>علي ياسر</small>
+                                            </div>
+                                        </td>
+                                        <td class="gray">
+                                            <div class="d-flex align-items-center">
+                                            <span class="bg-success ml-2 line_case"></span>
+                                                <span>ناجح</span>
+                                            </div>
+                                        </td>
+                                        <td class="gray"><small>24562$</small></td>
+                                        <td class="gray"><small>يوم 26 ابريل 2020</small></td>
+                                        <td class="gray"><small>ماستركارد</small></td>
+                                        <td><a class="btn btn-primary_two"><small>تفاصيل</small></a></td>
+                                    </tr>
+                                    <tr > 
+                                        <td >
+                                            <div class="d-flex justify-content-center align-items-center gray">
+                                                <img src="img/Ellipse 2.png"  class="img_user ml-2">
+                                                <small>علي ياسر</small>
+                                            </div>
+                                        </td>
+                                        <td class="gray">
+                                            <div class="d-flex align-items-center">
+                                            <span class="bg-warning ml-2 line_case"></span>
+                                                <span>انتظار</span>
+                                            </div>
+                                        </td>
+                                        <td class="gray"><small>224242$</small></td>
+                                        <td class="gray"><small>يوم 26 ابريل 2020</small></td>
+                                        <td class="gray"><small>ماستركارد</small></td>
+                                        <td><a class="btn btn-primary_two"><small>تفاصيل</small></a></td>
+                                    </tr>
+                                    <tr > 
+                                        <td >
+                                            <div class="d-flex justify-content-center align-items-center gray">
+                                                <img src="img/Ellipse 2.png"  class="img_user ml-2">
+                                                <small>علي ياسر</small>
+                                            </div>
+                                        </td>
+                                        <td class="gray">
+                                            <div class="d-flex align-items-center">
+                                                <span class="bg-danger ml-2 line_case"></span>
+                                                <span>ملغي</span>
+                                                </div>
+                                        </td>
+                                        <td class="gray"><small>224342$</small></td>
+                                        <td class="gray"><small>يوم 26 ابريل 2020</small></td>
+                                        <td class="gray"><small>ماستركارد</small></td>
+                                        <td><a class="btn btn-primary_two"><small>تفاصيل</small></a></td>
+                                    </tr>
+                                    <tr > 
+                                        <td >
+                                            <div class="d-flex justify-content-center align-items-center gray">
+                                                <img src="img/Ellipse 2.png"  class="img_user ml-2">
+                                                <small>علي ياسر</small>
+                                            </div>
+                                        </td>
+                                        <td class="gray">
+                                            <div class="d-flex align-items-center">
+                                            <span class="bg-success ml-2 line_case"></span>
+                                                <span>ناجح</span>
+                                            </div>
+                                        </td>
+                                        <td class="gray"><small>242422$</small></td>
+                                        <td class="gray"><small>يوم 26 ابريل 2050</small></td>
+                                        <td class="gray"><small>ماستركارد</small></td>
+                                        <td><a class="btn btn-primary_two"><small>تفاصيل</small></a></td>
+                                    </tr>
+                                    <tr > 
+                                        <td >
+                                            <div class="d-flex justify-content-center align-items-center gray">
+                                                <img src="img/Ellipse 2.png"  class="img_user ml-2">
+                                                <small>علي ياسر</small>
+                                            </div>
+                                        </td>
+                                        <td class="gray">
+                                            <div class="d-flex align-items-center">
+                                            <span class="bg-warning ml-2 line_case"></span>
+                                                <span>انتظار</span>
+                                            </div>
+                                        </td>
+                                        <td class="gray"><small>24532$</small></td>
+                                        <td class="gray"><small>يوم 26 ابريل 2023</small></td>
+                                        <td class="gray"><small>ماستركارد</small></td>
+                                        <td><a class="btn btn-primary_two"><small>تفاصيل</small></a></td>
+                                    </tr>
+                              </tbody>
+                              
+                          </table>
+                      </div>
+  
+                    </div>
+                </section>
+              </div>
+             
+          </div>
+
+          <div class="col-lg-3 p-3 parent_side_menu bg-white border border-3">
+            <a href="./index.html" class="d-flex flex-column align-items-center">
+                <span><i class="fas fa-book-open fa-3x blue_sec"></i></span>
+                <h3 class="blue_sec my-2"><b>مكتبتي</b></h3>
+            </a>
+            <div class="text-center mt-5 side_menu">
+                <a href="#" class="d-flex justify-content-end w-75 mx-auto gray mt-4 ">
+                    <span>البيانات الرئسية</span>
+                    <span><i class="fas fa-home ml-2"></i></span>
+                </a>
+                <a href="./Dh_user.html" class="d-flex justify-content-end w-75 mx-auto gray mt-4 active_dsch_item">
+                    <span> المستخدمين</span>
+                    <span><i class="fas fa-user-friends ml-2"></i></span>
+                </a>
+                <a href="./Dh_products.html" class="d-flex justify-content-end w-75 mx-auto gray mt-4 ">
+                    <span> المنتجات</span>
+                    <span><i class="fas fa-book ml-2"></i></span>
+                </a>
+                <a href="#" class="d-flex justify-content-end w-75 mx-auto gray mt-4">
+                    <span>الرسائل </span>
+                    <span><i class="far fa-comments ml-2"></i></span>
+                </a>
+                <a href="#" class="d-flex justify-content-end w-75 mx-auto gray mt-4">
+                    <span>المبيعات </span>
+                    <span><i class="far fa-address-card ml-2"></i></span>
+                </a>
+            </div>
+          </div>
+
+        </div>
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/dash.js"></script>
+        <script type="text/javascript" src="js/dataTables.min.js"></script>
+        <script>
+            $(document).ready( function () {
+                $('#myTable').DataTable();
+            } );
+        </script>
+  </body>
+
+</html>

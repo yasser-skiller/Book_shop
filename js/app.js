@@ -91,34 +91,27 @@ if(document.querySelector('.Big_rateYo')){
 
 //timer
 if(document.querySelector('.timerdown')){
-  // Set the date we're counting down to
-  var countDownDate = new Date("Dec 5, 2021 15:37:25").getTime();
 
-// Update the count down every 1 second
-  var x = setInterval(function() {
+  let countDownDate = new Date("Dec 5, 2021 15:37:25").getTime();
 
-    // Get today's date and time
-    var now = new Date().getTime();
+  let x = setInterval(function() {
+
+    
+    let now = new Date().getTime();
       
-    // Find the distance between now and the count down date
-    var distance = countDownDate - now;
+    let distance = countDownDate - now;
       
-    // Time calculations for days, hours, minutes and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    let seconds = Math.floor((distance % (1000 * 60)) / 1000);
       
-    // Output the result in an element with id="demo"
     document.querySelector('.day_time').innerHTML = days;
     document.querySelector('.hr_time').innerHTML = hours;
     document.querySelector('.min_time').innerHTML = minutes
     document.querySelector('.sec_time').innerHTML = seconds;
 
-    // document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-    // + minutes + "m " + seconds + "s ";
-      
-    // If the count down is over, write some text 
+    
     if (distance < 0) {
       clearInterval(x);
       document.querySelector('.day_time').innerHTML = 00;
@@ -151,7 +144,7 @@ if(document.querySelector('.Happy_client_img')){
   });
 }
 
-//nav
+//nav_Global
 if(document.querySelector('#navbarNav .navbar-nav .nav-item .nav-link')){
   let active_nav_link = document.querySelectorAll('#navbarNav .navbar-nav .nav-item .nav-link');
   let arr_active_nav_link = Array.from(active_nav_link);
@@ -166,6 +159,46 @@ if(document.querySelector('#navbarNav .navbar-nav .nav-item .nav-link')){
   });
 }
 
+//nav_writer_local
+if(document.querySelector('.writer_page')){
+  let active_local_link = document.querySelectorAll('.writer_page ul li');
+  let arr_active_local_link = Array.from(active_local_link);
+  arr_active_local_link.forEach(element => {
+    element.addEventListener('click',function(){
+      arr_active_local_link.forEach(ele => {
+        ele.classList.remove('active_nav_local_link');
+      });
+      element.classList.add('active_nav_local_link');
+    })
+
+  });
+}
+
+//nav_Book_local_one
+if(document.querySelector('.Books_nav_one')){
+  let nav_Book_local_one = document.querySelectorAll('.Books_nav_one li a');
+  let arr_nav_Book_local_one = Array.from(nav_Book_local_one);
+  arr_nav_Book_local_one.forEach(element => {
+    element.addEventListener('click',function(){
+      arr_nav_Book_local_one.forEach(ele => {
+        ele.classList.remove('blue_dark');
+      });
+      element.classList.add('blue_dark');
+    })
+
+  });
+}
+
+//input_range
+if(document.querySelector('.input_range')){
+  let input_range = document.querySelector('.input_range');
+  document.querySelector('.min_value').textContent = input_range.min;
+  document.querySelector('.max_value').textContent = input_range.max;
+  input_range.addEventListener('change', function(){
+    document.querySelector('.max_value').textContent = input_range.value;
+    // document.querySelector('.price_form').submit();
+  })
+}
 //heart
 if(document.querySelector('.fa-heart')){
   let fa_heart = document.querySelectorAll('.fa-heart');
@@ -183,4 +216,31 @@ if(document.querySelector('.fa-play-circle')){
   document.querySelector('.fa-play-circle').addEventListener('click', function () {
     document.querySelector('.poster_image').classList.add('poster_image_action')
   })
+}
+
+//icon_side_menu
+if(document.querySelector('.icon_side_menu')){
+  document.querySelector('.icon_side_menu').addEventListener('click', function(){
+    document.querySelector('.side_menu').classList.toggle('side_menu_action');
+    document.querySelector('.overlay_black').classList.toggle('overlay_black_action');
+  })
+  document.querySelector('.overlay_black').addEventListener('click', function(){
+    document.querySelector('.side_menu').classList.remove('side_menu_action');
+    document.querySelector('.overlay_black').classList.remove('overlay_black_action');
+  })
+}
+
+//pay
+if(document.querySelector('.pay_method')){
+  let pay_method = document.querySelectorAll('.pay_method');
+  let arr_pay_method = Array.from(pay_method);
+  arr_pay_method.forEach(element => {
+    element.addEventListener('click',function(){
+      arr_pay_method.forEach(ele => {
+        ele.classList.remove('active_pay_method');
+      });
+      element.classList.add('active_pay_method');
+    })
+
+  });
 }
