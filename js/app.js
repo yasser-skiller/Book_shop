@@ -195,8 +195,7 @@ if(document.querySelector('.input_range')){
   document.querySelector('.min_value').textContent = input_range.min;
   document.querySelector('.max_value').textContent = input_range.max;
   input_range.addEventListener('change', function(){
-    document.querySelector('.max_value').textContent = input_range.value;
-    // document.querySelector('.price_form').submit();
+    document.querySelector('.min_value').textContent = input_range.value;
   })
 }
 //heart
