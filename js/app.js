@@ -47,7 +47,6 @@ if(document.querySelector('.rate_block')){
   let arr_rate_block = Array.from(rate_block);
   arr_rate_block.forEach(element => {
     element.children[0].textContent = '('+element.children[4].children[0].value+')';
-
     $(element.children[3]).rateYo({
       rating: element.children[4].children[0].value,
       starWidth: '12px',
@@ -65,11 +64,52 @@ if(document.querySelector('.rate_block')){
         
 }
 
+//rate comment
+if(document.querySelector('.rate_comment')){
+  let rate_comment = document.querySelectorAll('.rate_comment');
+  let arr_rate_comment = Array.from(rate_comment);
+  arr_rate_comment.forEach(ele => {
+    $(ele.children[0]).rateYo({
+      rating: ele.children[1].children[0].value,
+      starWidth: '12px',
+      numStars: 5,
+      minValue: 0,
+      maxValue: 5,
+      spacing: "5px",
+      readOnly: true,
+      normalFill: '#b3b3b3',
+      ratedFill: '#e9b300',
+  
+    }) 
+    
+  });    
+}
+if(document.querySelector('.rate_comment_post')){
+  let rate_comment_post = document.querySelector('.rate_comment_post');
+  let rate_comment_post_value = document.querySelector('.rate_comment_post_value');
+  let ratevalue_chosssen = document.querySelector('.ratevalue_chosssen')
+
+    $(rate_comment_post).rateYo({
+      rating: 0,
+      starWidth: '15px',
+      numStars: 5,
+      minValue: 0,
+      maxValue: 5,
+      spacing: "5px",
+      normalFill: '#b3b3b3',
+      ratedFill: '#e9b300',
+      onSet: function (rating, rateYolnstance) {
+        ratevalue_chosssen.textContent = `(${rating})`;
+      }
+  
+    }) 
+    rate_comment_post.addEventListener('click',function () {
+      rate_comment_post_value.value = ratevalue_chosssen.textContent;
+    })
+}
 //feuture section rate
 if(document.querySelector('.Big_rateYo')){
   let Big_rateYo_value = document.querySelector('#Big_rateYo_value');
-
-    
   document.querySelector('#Big_rateYo_value_show').textContent = '('+Big_rateYo_value.value+')';
 
   $(".Big_rateYo").rateYo({

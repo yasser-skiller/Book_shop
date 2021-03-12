@@ -2,13 +2,13 @@
 <html lang="ar">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0">
     <title>site title </title>
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700&display=swap" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery.rateyo.min.css">
     <link href="css/style.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d24b72e522.js" crossorigin="anonymous"></script>
   <body>
@@ -188,6 +188,75 @@
           </div>
         </section>
       </div>
+
+      <!--comment part-->
+      <div class="row justify-content-between">
+        <section class="text-center order_993_2 add_area col-12 col-lg-3 mt-3">
+          <h5 class="gray mb-2">مساحه اعلانية</h5>
+          <div class="parent">
+              <p class="text-white py-3 mb-0 bg_blue_dark" style="border-radius: 9px 9px 0 0 ;">برعايه</p>
+              <img src="img/NoPath - Copy (90).png" height="400px" class="add_img w-100">
+          </div>
+        </section>
+
+        <section class="col-12 col-lg-9 pr-lg-5 mt-3">
+
+          <div class="mb-3 w-100 d-flex justify-content-end align-items-center">
+            <div class="comment_bg bg_blue_wh py-2 px-3 w-100 rounded text-right" >
+              <div class="">
+                <div class="d-flex justify-content-between rate_comment">
+                  <span class="stars"></span> 
+                  <form action="#"><input hidden value="3.5"></form>
+                  <h6 class="blue_dark mb-2">علي محمد</h6>
+                </div>
+              </div>
+              <p class="rlt">كتاب ممتاز جدا</p>
+            </div>
+            <div class="d-flex flex-column justify-content-center align-items-center ml-4">
+              <img src="img/NoPath - Copy (74).png" class="comment_img ">
+              <small class="gray text-center mt-2">22/3/2022</small>
+            </div>
+          </div>
+
+          <div class="mb-3 w-100 d-flex justify-content-end align-items-center">
+            <div class="comment_bg bg_blue_wh py-2 px-3 w-100 rounded text-right" >
+              <div class="">
+                <div class="d-flex justify-content-between rate_comment">
+                  <span class="stars"></span> 
+                  <form action="#"><input hidden value="3.5"></form>
+                  <h6 class="blue_dark mb-2">علي محمد</h6>
+                </div>
+              </div>
+              <p class="rlt">كتاب ممتاز جدا</p>
+            </div>
+            <div class="d-flex flex-column justify-content-center align-items-center ml-4">
+              <img src="img/NoPath - Copy (74).png" class="comment_img ">
+              <small class="gray text-center mt-2">22/3/2022</small>
+            </div>
+          </div>
+
+          
+
+          <form>
+  
+            <div class="d-flex justify-content-end align-items-center w-75  mx-auto mb-2">
+              <span class="ratevalue_chosssen"></span>
+              <span class="rate_comment_post m-0 mr-2"></span>
+              <input hidden class="rate_comment_post_value" value="">
+              <p class="m-0">تقيم</p>
+            </div>
+
+            <div class="d-flex justify-content-between">
+              <button class="btn btn_hover_wh border_4 rounded px-3">نشر</button>
+              <input class="form-control rlt pr-2 rounded w-75 mx-auto" placeholder="تعليقك .... ">
+            </div>
+
+          </form>
+          
+        </section>
+
+      </div>
+      
      
     </div>
 
@@ -274,12 +343,10 @@
           <p class="text-white text-center py-1 mb-0">جميع الحقوق محفوظة إلي مكتبتي</p>
       </section>
    </footer>
-
-
-
-    
       
+   <script src="js/jquery-3.5.1.min.js"></script>
    <script src="js/bootstrap.min.js"></script>
+   <script src="js/jquery.rateyo.min.js"></script>
    <script src="js/app.js"></script>
         
   </body>

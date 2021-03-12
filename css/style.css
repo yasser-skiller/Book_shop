@@ -488,11 +488,37 @@ a {
   transition: bottom 0.7s ease-out;
   overflow: hidden; }
 
+@media (max-width: 993px) {
+  .order_993_2 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2; } }
+
 .table tr, .table th, .table td {
   border: none; }
 
 .table .bg_gray {
   background-color: #e6e5e5; }
+
+.comment_img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; }
+
+.comment_bg {
+  position: relative; }
+
+.comment_bg:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 13px solid #f1f2ff;
+  border-right: 13px solid transparent;
+  border-top: 13px solid #f1f2ff;
+  border-bottom: 13px solid transparent;
+  right: -25px;
+  top: 13px; }
 
 .active_pay_method {
   position: relative;
