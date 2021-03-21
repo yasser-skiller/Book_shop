@@ -69,7 +69,7 @@ if(document.querySelector('.rate_comment')){
   let rate_comment = document.querySelectorAll('.rate_comment');
   let arr_rate_comment = Array.from(rate_comment);
   arr_rate_comment.forEach(ele => {
-    $(ele.children[0]).rateYo({
+    $(ele.children[2]).rateYo({
       rating: ele.children[1].children[0].value,
       starWidth: '12px',
       numStars: 5,
@@ -107,6 +107,7 @@ if(document.querySelector('.rate_comment_post')){
       rate_comment_post_value.value = ratevalue_chosssen.textContent;
     })
 }
+
 //feuture section rate
 if(document.querySelector('.Big_rateYo')){
   let Big_rateYo_value = document.querySelector('#Big_rateYo_value');

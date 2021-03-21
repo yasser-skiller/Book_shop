@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1">
@@ -16,38 +16,42 @@
     <header id="header">
 
       <nav class="py-3 mb-2 shadow-sm">
-          <div class="container">
-              <div class="row">
+        <div class="container">
+            <div class="row">
 
-                  <div class="col-2 d-flex justify-content-center align-items-center">
-                      
-                      <a href="#" class="gray mx-2">
-                          <span><i class="fas fa-shopping-cart"></i></span>
-                      </a>
+              
 
-                      <a href="#" class="gray mx-2">
-                          <span><i class="fas fa-user"></i></span>
-                      </a>
+                <div class="col-5 col-md-3 col-lg-2">
+                    <a href="./index.html" class="d-flex align-items-center rlt">
+                        <span><i class="fas fa-book-open fa-2x blue_dark"></i></span>
+                        <h5 class="blue_dark mx-2 Bold">مكتبتي</h5>
+                    </a>
+                </div>
 
-                  </div>
+                <form action="#" class="col-5 col-md-7 col-lg-8">
+                    <div class="position-relative ">
+                        <input type="text" class="w-100 form-control rlt pr-4 rounded-pill" placeholder="ابحث عن اكثر من 500 الف كتاب">
+                        <span class="position-absolute search_positon"><i class="fas fa-search gray"></i></span>
+                    </div>
+                </form>
 
-                  <form action="#" class="col-5 col-md-7 col-lg-8">
-                      <div class="position-relative ">
-                          <input type="text" class="w-100 form-control rlt pr-4 rounded-pill" placeholder="ابحث عن اكثر من 500 الف كتاب">
-                          <span class="position-absolute search_positon"><i class="fas fa-search gray"></i></span>
-                      </div>
-                  </form>
+                <div class="col-2 d-flex justify-content-center align-items-center">
+                    
+                    <a href="./cart.html" class="gray mx-2">
+                        <span><i class="fas fa-shopping-cart"></i></span>
+                    </a>
 
-                  <div class="col-5 col-md-3 col-lg-2">
-                      <a href="./index.html" class="d-flex align-items-center rlt">
-                          <span><i class="fas fa-book-open fa-2x blue_dark"></i></span>
-                          <h5 class="blue_dark mr-3"><b>مكتبتي</b></h5>
-                      </a>
-                  </div>
-                  
-              </div>
-          </div>
-      </nav>
+                    <a href="./Dh_products.html" class="gray mx-2">
+                        <span><i class="fas fa-user"></i></span>
+                    </a>
+
+                </div>
+
+               
+                
+            </div>
+        </div>
+    </nav>
 
       <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
           <div class="container-fluid">
@@ -88,55 +92,10 @@
 
     <div class="container mb-5">
       <div class="row mt-5">
-        <div class="col-12 col-lg-4 p-4 text-right mb-4" style="height: fit-content;  background-color: #f1fbff;">
-          <div class="row">
-
-            <div class="my-3 col-12 col-sm-6 col-lg-12">
-              <h5 class="blue_dark mb-4"><b>مكان التوصيل</b></h5>
-              <div class="d-flex justify-content-end mb-2">
-                <h6 class="gray mr-2">محمد مصطفي</h6>
-                <span><i class="fas fa-user gray"></i></span>
-              </div>
-              <div class="d-flex justify-content-end mb-2">
-                <h6 class="gray mr-2"> 13 شارع الهرم بالجيزه</h6>
-                <span><i class="fas fa-map-marker-alt gray"></i></span>
-              </div>
-              <div class="d-flex justify-content-end mb-2">
-                <h6 class="gray mr-2"> 00000000000</h6>
-                <span><i class="fas fa-phone-alt gray"></i></span>
-              </div>
-            </div>
-  
-            <div class="my-3 col-12 col-sm-6 col-lg-12">
-              <h5 class="blue_dark mb-4"><b> الفاتوره</b></h5>
-              <div class="d-flex justify-content-end mb-2">
-                <h6 class="gray "><b>ر.س 66</b></h6>
-                <h6 class="gray mr-2 ml-4"> المبلغ الكلي</h6>
-                <span><i class="fas fa-money-bill-wave gray"></i></span>
-              </div>
-              <div class="d-flex justify-content-end mb-2">
-                <h6 class="gray mr-3"><b>ر.س 66</b></h6>
-                <h6 class="gray mr-2 ml-5"> الضرائب</h6>
-                <span><i class="fas fa-map-marker-alt gray"></i></span>
-              </div>
-              <div class="d-flex justify-content-end mb-2">
-                <h6 class="gray mr-3"><b>ر.س 66</b></h6>
-                <h6 class="gray mr-2 ml-5"> التوصيل</h6>
-                <span><i class="fas fa-truck gray"></i></span>
-              </div>
-            </div>
-          </div>
-
-          
-
-          <div class="w-100 text-center mt-3">
-            <h3 class="gray"><b>500ر.س</b></h3>
-          </div>
-
-        </div>
+        
         <div class="col-12 col-lg-8">
-          <div class="text-right rlt d-flex">
-            <h4 class="gray"><b>عربه التسوق</b></h4>
+          <div class="text-start rlt d-flex">
+            <h4 class="gray Bold">عربه التسوق</h4>
             <h5 class="blue_dark mr-2">4<span class="mr-2">اغراض</span></h5>
           </div>
           <div class="row justify-content-between">
@@ -145,7 +104,7 @@
                   <img src="img/BookCover.png" class="size_book rounded">
                   <span class="position-absolute cursor" style="top: -5px;right: 0px;"><i class="fas fa-times-circle text-danger"></i></span>
               </div>
-              <div class="mt-3 w-170 text-right">
+              <div class="mt-3 w-170 text-start">
                 <b class="blue_dark">حر في التركيز</b><br>
                 <small><b class="gray">ر.س 33</b></small>
               </div>
@@ -155,7 +114,7 @@
                   <img src="img/BookCover.png" class="size_book rounded">
                   <span class="position-absolute cursor" style="top: -5px;right: 0px;"><i class="fas fa-times-circle text-danger"></i></span>
               </div>
-              <div class="mt-3 w-170 text-right">
+              <div class="mt-3 w-170 text-start">
                 <b class="blue_dark">حر في التركيز</b><br>
                 <small><b class="gray">ر.س 33</b></small>
               </div>
@@ -165,7 +124,7 @@
                   <img src="img/BookCover.png" class="size_book rounded">
                   <span class="position-absolute cursor" style="top: -5px;right: 0px;"><i class="fas fa-times-circle text-danger"></i></span>
               </div>
-              <div class="mt-3 w-170 text-right">
+              <div class="mt-3 w-170 text-start">
                 <b class="blue_dark">حر في التركيز</b><br>
                 <small><b class="gray">ر.س 33</b></small>
               </div>
@@ -175,7 +134,7 @@
                   <img src="img/BookCover.png" class="size_book rounded">
                   <span class="position-absolute cursor" style="top: -5px;right: 0px;"><i class="fas fa-times-circle text-danger"></i></span>
               </div>
-              <div class="mt-3 w-170 text-right">
+              <div class="mt-3 w-170 text-start">
                 <b class="blue_dark">حر في التركيز</b><br>
                 <small><b class="gray">ر.س 33</b></small>
               </div>
@@ -183,9 +142,55 @@
             
           </div>
           <div class="d-flex flex-column flex-sm-row justify-content-around">
-            <button class="btn btn_hover_wh border_4 rounded px-5 py-2 mt-2"><b>إتمام الدفع</b></button>
-            <button class="btn btn_gray border_4 rounded px-4 py-2 mt-2"> <b>متابعه التسوق</b></button>
+            <button class="btn btn_hover_wh border_4 rounded px-5 py-2 mt-2 Bold">إتمام الدفع</button>
+            <button class="btn btn_gray border_4 rounded px-4 py-2 mt-2 Bold">متابعه التسوق</button>
           </div>
+        </div>
+        <div class="col-12 col-lg-4 p-4 text-start mb-4" style="height: fit-content;  background-color: #f1fbff;">
+          <div class="row">
+
+            <div class="my-3 col-12 col-sm-6 col-lg-12 text-start">
+              <h5 class="blue_dark mb-4 Bold">مكان التوصيل</h5>
+              <div class="d-flex justify-content-start mb-2">
+                <span><i class="fas fa-user gray"></i></span>
+                <h6 class="gray mr-2">محمد مصطفي</h6>
+              </div>
+              <div class="d-flex justify-content-start mb-2">
+                <span><i class="fas fa-map-marker-alt gray"></i></span>
+                <h6 class="gray mr-2"> 13 شارع الهرم بالجيزه</h6>
+              </div>
+              <div class="d-flex justify-content-start mb-2">
+                <span><i class="fas fa-phone-alt gray"></i></span>
+                <h6 class="gray mr-2"> 00000000000</h6>
+              </div>
+            </div>
+  
+            <div class="my-3 col-12 col-sm-6 col-lg-12">
+              <h5 class="blue_dark mb-4 Bold"> الفاتوره</h5>
+              <div class="d-flex justify-content-start mb-2">
+                <span><i class="fas fa-money-bill-wave gray"></i></span>
+                <h6 class="gray mr-2 ml-4"> المبلغ الكلي</h6>
+                <h6 class="gray Bold">ر.س 66</h6>
+              </div>
+              <div class="d-flex justify-content-start mb-2">
+                <span><i class="fas fa-map-marker-alt gray"></i></span>
+                <h6 class="gray mr-2 ml-5"> الضرائب</h6>
+                <h6 class="gray Bold">ر.س 66</h6>
+              </div>
+              <div class="d-flex justify-content-start mb-2">
+                <span><i class="fas fa-truck gray"></i></span>
+                <h6 class="gray mr-2 ml-5"> التوصيل</h6>
+                <h6 class="gray Bold">ر.س 66</h6>
+              </div>
+            </div>
+          </div>
+
+          
+
+          <div class="w-100 text-center mt-3">
+            <h6 class="gray Bold">ر.س 66</h6>
+          </div>
+
         </div>
       </div>
      
@@ -208,7 +213,7 @@
               <section class="col-12 col-md-6 col-lg-3 d-flex mt-2 flex-column justify-content-center align-items-center">
                   <a href="./index.html" class="d-flex flex-column align-items-center">
                       <span><i class="fas fa-book-open fa-5x text-white"></i></span>
-                      <h2 class="text-white my-2"><b>مكتبتي</b></h2>
+                      <h2 class="text-white my-2 Bold">مكتبتي</h2>
                   </a>
                   <p class="text-center">مكتبه لبيع الكتب القديمه والحديثه
                       ويوجد بها مختلف أنواع الكتب
@@ -218,46 +223,46 @@
 
               <section class="col-12 col-md-6 col-lg-3 d-flex mt-2 flex-column justify-content-center align-items-center">
                   <a href="#" class="d-flex align-items-center justify-content-center mb-2">
-                      <h5 class="text-white mr-3"><b>مكاننا</b></h5>
                       <span><i class="far fa-compass fa-2x text-white"></i></span>
+                      <h5 class="text-white mx-3 Bold">مكاننا</h5>
                   </a>
                   <p>مدينة الرياض بالسعودية</p>
                   <p>شارع محمد مكان 333</p>
                   <p>رقم +0000000000000</p>
-                  <p><span>E-mail@gmail.com </span>: الأميل</p>
+                  <p> الأميل : <span>E-mail@gmail.com </span></p>
               </section>
 
               <section class="col-12 col-md-6 col-lg-3 d-flex mt-2 flex-column justify-content-center align-items-center">
-                  <a href="#" class="d-flex align-items-center justify-content-end mb-2">
-                      <h5 class="text-white mr-3"><b>كن علي تواصل</b></h5> 
-                      <span><i class="fas fa-share-alt fa-2x text-white"></i></span>
+                  <a href="#" class="d-flex align-items-center justify-content-start mb-2">
+                    <span><i class="fas fa-share-alt fa-2x text-white"></i></span>
+                      <h5 class="text-white mx-3 Bold">كن علي تواصل</h5> 
                   </a>
                   <div class="">
-                      <a href="#" class="d-flex align-items-center justify-content-end icon_hover">
-                          <p class="text-white mr-3">يوتيوب</p>
+                      <a href="#" class="d-flex align-items-center justify-content-start icon_hover">
                           <span class="mb-2"><i class="fab fa-youtube text-white "></i></span>
+                          <p class="text-white mx-3">يوتيوب</p>
                       </a>
-                      <a href="#" class="d-flex align-items-center justify-content-end icon_hover">
-                          <p class="text-white mr-3">فيس بوك</p>
+                      <a href="#" class="d-flex align-items-center justify-content-start icon_hover">
                           <span class="mb-2"><i class="fab fa-facebook-square text-white"></i></span>
+                          <p class="text-white mx-3">فيس بوك</p>
                       </a>
-                      <a href="#" class="d-flex align-items-center justify-content-end icon_hover">
-                          <p class="text-white mr-3">انستجرام</p>
+                      <a href="#" class="d-flex align-items-center justify-content-start icon_hover">
                           <span class="mb-2"><i class="fab fa-instagram text-white"></i></span>
+                          <p class="text-white mx-3">انستجرام</p>
                       </a>
-                      <a href="#" class="d-flex align-items-center justify-content-end icon_hover">
-                          <p class="text-white mr-3">تويتر</p>
+                      <a href="#" class="d-flex align-items-center justify-content-start icon_hover">
                           <span class="mb-2"><i class="fab fa-twitter text-white"></i></span>
+                          <p class="text-white mx-3">تويتر</p>
                       </a>
               </div>
               </section>
 
               <section class="col-12 col-md-6 col-lg-3 d-flex mt-2 flex-column justify-content-center align-items-center">
-                  <a href="#" class="d-flex align-items-center justify-content-end">
-                      <h5 class="text-white mr-3"><b>معلومات</b></h5>
+                  <a href="#" class="d-flex align-items-center justify-content-start">
                       <span><i class="fas fa-question-circle fa-2x text-white"></i></span>
+                      <h5 class="text-white mx-3 Bold">معلومات</h5>
                   </a>
-                  <ul class="rlt text-right">
+                  <ul class="rlt text-start">
                       <li class="mt-1"><a href="#" class="text-white">تواصل معنا</a></li>
                       <li class="mt-1"><a href="#" class="text-white">حسابي</a></li>
                       <li class="mt-1"><a href="#" class="text-white">المدونة</a></li>

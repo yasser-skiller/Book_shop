@@ -25,17 +25,20 @@ body {
   background-repeat: no-repeat;
   background-size: cover; }
 
+.text-start {
+  text-align: start !important; }
+
+.text-end {
+  text-align: end !important; }
+
 .rateYo {
   z-index: -1; }
 
 .t {
   border: 2px #000 solid; }
 
-.rlt {
-  direction: rtl !important; }
-
-.llt {
-  direction: ltr !important; }
+.Bold {
+  font-weight: bold !important; }
 
 ul, ol {
   padding: 0; }
