@@ -146,6 +146,19 @@ a {
         -ms-flex-order: 2;
             order: 2; } }
 
+.logo_size_nav {
+  width: 45px;
+  height: 45px; }
+
+.logo_size_footer,
+.logo_size_dash {
+  width: 100px;
+  height: 100px; }
+
+.logo_size_form {
+  width: 120px;
+  height: 120px; }
+
 #header .search_positon {
   top: 8px;
   right: 5px; }
