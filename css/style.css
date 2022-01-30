@@ -297,11 +297,13 @@ a {
 
 .swiper-slide:hover .card_effact {
   bottom: 0px;
+  visibility: visible;
   -webkit-transition: bottom 0.7s ease-in-out;
   -o-transition: bottom 0.7s ease-in-out;
   transition: bottom 0.7s ease-in-out; }
 
 .card_effact {
+  visibility: hidden;
   bottom: -150px;
   -webkit-transition: bottom 0.7s ease-in-out;
   -o-transition: bottom 0.7s ease-in-out;
@@ -793,3 +795,9 @@ td {
   @media (max-width: 767px) {
     .class_po_a {
       padding-top: 120px; } }
+
+#carouselExampleControls .carousel-control-prev,
+#carouselExampleControls .carousel-control-next{
+  height: fit-content;
+  bottom: 50% !important;
+}

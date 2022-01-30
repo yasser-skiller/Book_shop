@@ -32,14 +32,27 @@ if(document.querySelector('.swiper-container')){
     }
   });
 
-  var swiper = new Swiper('.future .swiper-container', {
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
+  // var swiper = new Swiper('.future .swiper-container', {
+  //   navigation: {
+  //     nextEl: '.swiper-button-next',
+  //     prevEl: '.swiper-button-prev',
+  //   },
+  // });
 
 }
+
+var swiper = new Swiper('.future .swiper', {
+  cssMode: true,
+  navigation: {
+    nextEl: '.future .swiper-button-next',
+    prevEl: '.future .swiper-button-prev',
+  },
+  pagination: {
+    el: '.future .swiper-pagination'
+  },
+  mousewheel: true,
+  keyboard: true,
+});
 
 //rate General
 if(document.querySelector('.rate_block')){
@@ -133,7 +146,7 @@ if(document.querySelector('.Big_rateYo')){
 //timer
 if(document.querySelector('.timerdown')){
 
-  let countDownDate = new Date("Dec 5, 2021 15:37:25").getTime();
+  let countDownDate = new Date("Dec 5, 2022 15:37:25").getTime();
 
   let x = setInterval(function() {
 
