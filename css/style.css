@@ -266,6 +266,7 @@ a {
   width: 100%;
   height: -webkit-fit-content !important;
   height: -moz-fit-content !important;
+  overflow: hidden;
   height: fit-content !important; }
   .swiper-container .swiper-button-next:after, .swiper-container .swiper-button-prev:after {
     font-size: 15px;
@@ -610,7 +611,7 @@ nav .form {
   position: fixed;
   display: none;
   bottom: 5px;
-  left: 15px;
+  left: 30px;
   width: 40px;
   height: 40px;
   text-align: center;
